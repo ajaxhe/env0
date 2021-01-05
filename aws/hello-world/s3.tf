@@ -1,9 +1,9 @@
 provider "random" {}
 
 resource "random_string" "random" {
-  length = 16
+  length = 12
   special = false
-  min_lower = 16
+  min_lower = 12
 }
 
 resource "aws_s3_bucket" "website_bucket" {
